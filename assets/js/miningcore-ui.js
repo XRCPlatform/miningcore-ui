@@ -1,6 +1,6 @@
 // config
-var API = 'http://localhost:4000/api/'; // API address
-var defaultPool = ''; // Default Pool ID
+var API = 'http://tpool.bitcoinrh.org:4000/api/'; // API address
+var defaultPool = 'BitCoinRhodium'; // Default Pool ID
 
 var currentPool = defaultPool;
 
