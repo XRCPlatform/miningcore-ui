@@ -389,6 +389,9 @@ hr {
     color: #EB5E28;
     opacity: 1; }
 
+.sidebar .logo img {
+	width: 200px;
+}
 .main-panel {
   background-color: #f4f3ef;
   position: relative;
