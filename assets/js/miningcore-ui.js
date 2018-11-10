@@ -1,5 +1,5 @@
 // config
-var API = 'http://tpool.bitcoinrh.org:4000/api/'; // API address
+var API = 'http://poolcore.bitcoinrh.org:4000/api/'; // API address
 var defaultPool = 'BitCoinRhodium'; // Default Pool ID
 
 var currentPool = defaultPool;
@@ -383,7 +383,7 @@ function loadPaymentsList() {
                 $.each(data, function (index, value) {
                     paymentList += '<tr>';
                     paymentList += '<td rowspan="2">' + new Date(value.created).toLocaleString() + '</td>';
-                    paymentList += '<td><a href="' + value.addressInfoLink + '" target="_blank">' + value.address.substring(0, 12) + ' &hellip; ' + value.address.substring(value.address.length - 12) + '</td>';
+                    paymentList += '<td>' + value.address.substring(0, 12) + ' &hellip; ' + value.address.substring(value.address.length - 12) + '</td>';
                     paymentList += '<td>' + _formatter(value.amount, 5, '') + '</td>';
                     paymentList += '</tr><tr><td style="display: none"></td>';
                     paymentList += '<td colspan="2"><a href="' + value.transactionInfoLink + '" target="_blank">' + value.transactionConfirmationData.substring(0, 16) + ' &hellip; ' + value.transactionConfirmationData.substring(value.transactionConfirmationData.length - 16) + ' </a></td>';
