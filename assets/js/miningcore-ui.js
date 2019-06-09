@@ -45,7 +45,7 @@ function loadPools(renderCallback) {
                 }
                 if (currentPool === value.id) {
                     $('#currentPool p').attr('data-id', value.id);
-                    $('#currentPool p').text(value.coin.type);
+                    $('#currentPool p').text('XRC');
                 } else {
                     poolList += '<li><a href="javascript:void(0)" data-id="' + value.id + '">' + value.coin.type + '</a></li>';
                 }
@@ -421,7 +421,8 @@ function loadConnectConfig() {
                     }
                     connectPoolConfig += '<tr><td>Pool Fee</td><td>' + value.poolFeePercent + '%</td></tr>';
                     $.each(value.ports, function (port, options) {
-                        connectPoolConfig += '<tr><td>Port ' + port + ' Difficulty</td><td>';
+						if (port != 3068) {
+							                        connectPoolConfig += '<tr><td>Port ' + port + ' Difficulty</td><td>';
                         if (typeof(options.varDiff) !== "undefined") {
                             connectPoolConfig += 'Variable / ' + options.varDiff.minDiff + ' &harr; ';
                             if (typeof(options.varDiff.maxDiff) === "undefined") {
@@ -433,6 +434,7 @@ function loadConnectConfig() {
                             connectPoolConfig += 'Static / ' + options.difficulty;
                         }
                         connectPoolConfig += '</td></tr>';
+						}
                     });
                 }
             });

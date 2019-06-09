@@ -201,7 +201,11 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'UA-110519512-9');
+  gtag('config', 'UA-110519512-9', {
+            'linker': {
+                'domains': ['bitcoinrh.org', 'explorer.bitcoinrh.org', 'wallet.bitcoinrh.org', 'poolcore.bitcoinrh.org', 'network.bitcoinrh.org', 'electrum.bitcoinrh.org', 'freemarket.one']
+            }
+        });
 </script>
 
 </html>

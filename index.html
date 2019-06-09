@@ -276,7 +276,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-12 col-sm-12">
+                    <div class="col-lg-8 col-sm-8">
                         <div class="card">
                             <div class="header">
                                 <h4 class="title">Hash Rate</h4>
@@ -296,6 +296,31 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+					
+					<div class="col-lg-4 col-sm-4">
+                        <div class="card">
+						     <div class="header">
+                                <h4 class="title">Airdrop Info</h4>
+                                <p class="category">Get your Bitcoin Rhodium for free</p>
+                            </div>
+                            <div class="content">
+											<div class="img-info">
+												<a href="https://www.bitcoinrh.org/Home/StrongHandsAirdrop" target="_blank">
+													<img style="width: 100%" src="/assets/img/airdrop.jpg" alt="AirDrop to Bitcoin Rhodium Holders" />
+												</a>
+											</div>
+                                <div class="footer">
+                                    <hr>
+                                    <div class="stats">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					
+					<div class="col-lg-12 col-sm-12">
                         <div class="card">
                             <div class="header">
                                 <h4 class="title">Miners</h4>
@@ -387,7 +412,11 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'UA-110519512-9');
+  gtag('config', 'UA-110519512-9', {
+            'linker': {
+                'domains': ['bitcoinrh.org', 'explorer.bitcoinrh.org', 'wallet.bitcoinrh.org', 'poolcore.bitcoinrh.org', 'network.bitcoinrh.org', 'electrum.bitcoinrh.org', 'freemarket.one']
+            }
+        });
 </script>
 
 </html>
