@@ -1,5 +1,5 @@
 // config
-var API = 'http://poolcore.bitcoinrh.org:4000/api/'; // API address
+var API = 'http://poolcore.xrhodium.org:4000/api/'; // API address
 var defaultPool = 'BitCoinRhodium'; // Default Pool ID
 
 var currentPool = defaultPool;
